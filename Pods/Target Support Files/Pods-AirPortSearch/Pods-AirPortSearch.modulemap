@@ -1,0 +1,6 @@
+framework module Pods_AirPortSearch {
+  umbrella header "Pods-AirPortSearch-umbrella.h"
+
+  export *
+  module * { export * }
+}
