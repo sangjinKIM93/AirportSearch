@@ -15,6 +15,11 @@
 		48CF76C024EC00CD00B23D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CF76BF24EC00CD00B23D86 /* Assets.xcassets */; };
 		48CF76C324EC00CD00B23D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CF76C124EC00CD00B23D86 /* LaunchScreen.storyboard */; };
 		48CF76CD24EC040400B23D86 /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76CC24EC040400B23D86 /* SearchCityViewModel.swift */; };
+		48CF76D024EC122D00B23D86 /* SearchCityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76CF24EC122D00B23D86 /* SearchCityCoordinator.swift */; };
+		48CF76D224EC126900B23D86 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76D124EC126900B23D86 /* Coordinator.swift */; };
+		48CF76D424EC152000B23D86 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76D324EC152000B23D86 /* BaseCoordinator.swift */; };
+		48CF76D724EC1F5200B23D86 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76D624EC1F5200B23D86 /* Storyboardable.swift */; };
+		48CF76D924EC241B00B23D86 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF76D824EC241B00B23D86 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		48CF76C224EC00CD00B23D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CF76C424EC00CD00B23D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48CF76CC24EC040400B23D86 /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
+		48CF76CF24EC122D00B23D86 /* SearchCityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityCoordinator.swift; sourceTree = "<group>"; };
+		48CF76D124EC126900B23D86 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		48CF76D324EC152000B23D86 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		48CF76D624EC1F5200B23D86 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		48CF76D824EC241B00B23D86 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		499CA020D9ACCCE134E26B26 /* Pods-AirPortSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPortSearch.release.xcconfig"; path = "Target Support Files/Pods-AirPortSearch/Pods-AirPortSearch.release.xcconfig"; sourceTree = "<group>"; };
 		5C7621EF4ACEC7951DF8C07A /* Pods-AirPortSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPortSearch.debug.xcconfig"; path = "Target Support Files/Pods-AirPortSearch/Pods-AirPortSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +75,8 @@
 		48CF76B524EC00CC00B23D86 /* AirPortSearch */ = {
 			isa = PBXGroup;
 			children = (
+				48CF76D524EC1F4200B23D86 /* Shared */,
+				48CF76CE24EC120900B23D86 /* Coordinator */,
 				48CF76CB24EC038E00B23D86 /* ViewModel */,
 				48CF76CA24EC038000B23D86 /* View */,
 				48CF76B624EC00CC00B23D86 /* AppDelegate.swift */,
@@ -91,6 +103,25 @@
 				48CF76CC24EC040400B23D86 /* SearchCityViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48CF76CE24EC120900B23D86 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				48CF76CF24EC122D00B23D86 /* SearchCityCoordinator.swift */,
+				48CF76D124EC126900B23D86 /* Coordinator.swift */,
+				48CF76D324EC152000B23D86 /* BaseCoordinator.swift */,
+				48CF76D824EC241B00B23D86 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		48CF76D524EC1F4200B23D86 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				48CF76D624EC1F5200B23D86 /* Storyboardable.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		DB9105F686786002790FD7DF /* Pods */ = {
@@ -227,6 +258,11 @@
 			files = (
 				48CF76BB24EC00CC00B23D86 /* SearchCityViewController.swift in Sources */,
 				48CF76B724EC00CC00B23D86 /* AppDelegate.swift in Sources */,
+				48CF76D224EC126900B23D86 /* Coordinator.swift in Sources */,
+				48CF76D024EC122D00B23D86 /* SearchCityCoordinator.swift in Sources */,
+				48CF76D724EC1F5200B23D86 /* Storyboardable.swift in Sources */,
+				48CF76D424EC152000B23D86 /* BaseCoordinator.swift in Sources */,
+				48CF76D924EC241B00B23D86 /* AppCoordinator.swift in Sources */,
 				48CF76B924EC00CC00B23D86 /* SceneDelegate.swift in Sources */,
 				48CF76CD24EC040400B23D86 /* SearchCityViewModel.swift in Sources */,
 			);

@@ -15,6 +15,8 @@ protocol SearchCityViewPresentable {
         searchText: Driver<String>, ()
     )
     typealias Output = ()
+    //얘는 클로저임
+    typealias ViewModelBuilder = (SearchCityViewPresentable.Input) -> SearchCityViewPresentable
     
     //핵심은 input,output으로 직관적으로 흐름을 관리하는 것이다.
     //단 그 타입을 typealias를 통해서 쉽게 변경 가능하도록 한 것이다.
