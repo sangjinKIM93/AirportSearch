@@ -18,13 +18,15 @@ class SearchCityCoordinator : BaseCoordinator{
     
     override func start() {
         
-        //storybordable을 채택했기에 가능함.
+        //storybordable을 채택했기에 가능함. viewController생성
         let view = SearchCityViewController.instantiate()
+        
+        let service = AirportServiceMoya.shared
         
         //viewModelBuilder로 viewmodel을 생성.
         //viewModelBuilder는 closure이기 때문에 아래와 같은 식으로 사용 가능
         view.viewModelBuilder = {
-            SearchCityViewModel(input: $0)
+            SearchCityViewModel(input: $0, airportService: service)
         }
         
         navigationController.pushViewController(view, animated: true)

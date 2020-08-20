@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Moya
 
 class SearchCityViewController: UIViewController, Storyboardable {
     
@@ -23,6 +24,10 @@ class SearchCityViewController: UIViewController, Storyboardable {
         viewModel = viewModelBuilder((
             searchText: searchTextField.rx.text.orEmpty.asDriver(), ()
         ))
+        
+        self.title = "공항 찾기"
+        
+        
     }
 
 

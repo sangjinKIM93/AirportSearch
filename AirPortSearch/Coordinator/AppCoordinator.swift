@@ -13,6 +13,15 @@ class AppCoordinator: BaseCoordinator {
     private let window: UIWindow
     private let navigationController: UINavigationController = {
         let navigationController = UINavigationController()
+        
+        let navigationBar = navigationController.navigationBar
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.barTintColor = UIColor.systemOrange
+        navigationBar.tintColor = .white
+        navigationBar.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 28), .foregroundColor: UIColor.white]
+        navigationBar.isTranslucent = false
+        
         return navigationController
     }()
     
