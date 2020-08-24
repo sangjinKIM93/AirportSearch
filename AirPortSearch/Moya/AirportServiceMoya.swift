@@ -22,7 +22,6 @@ class AirportServiceMoya {
                 switch result {
                 case let .success(moyaResponse):
                     do {
-                        
                         let airportJSON = try JSONDecoder().decode([AirportModel].self, from: moyaResponse.data)
                         single(.success(airportJSON))
                         

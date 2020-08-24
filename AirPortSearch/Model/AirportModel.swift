@@ -15,10 +15,11 @@ struct AirportResponse: Codable {
 
 struct AirportModel: Codable {
     let code, lat, lon, name: String?
-    let city, state, country, woeid: String?
+    let state, country, woeid: String?
     let tz, phone, type, email: String?
     let url, runwayLength, elev, icao: String?
     let directFlights, carriers: String?
+    let city: String
 
     enum CodingKeys: String, CodingKey {
         case code, lat, lon, name, city, state, country, woeid, tz, phone, type, email, url
